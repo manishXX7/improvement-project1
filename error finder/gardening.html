@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Gardening Community</title>
+    <link rel="stylesheet" href="gardening.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Local Gardening Community</h1>
+    </header>
+    <main>
+        <section id="plant-database">
+            <h2>Plant Database</h2>
+            <label for="filter">Filter by type:</label>
+            <select id="filter" onchange="filterPlants()">
+                <option value="all">All</option>
+                <option value="flowers">Flowers</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+            </select>
+            <div id="plantList"></div>
+        </section>
+        <section id="community-forum">
+            <h2>Community Forum</h2>
+            <form id="forumPostForm">
+                <input type="text" id="postTitle" placeholder="Post Title">
+                <textarea id="postContent" placeholder="Share your gardening tips..."></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Local Gardening Community</p>
+    </footer>
+    <script src="gardening.js"></script>
+</body>
+</html>

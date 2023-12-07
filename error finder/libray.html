@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Library</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Community Library</h1>
+    </header>
+    <main>
+        <section id="book-search">
+            <h2>Book Search</h2>
+            <input type="text" id="searchQuery" placeholder="Search for books">
+            <button onclick="searchBooks()">Search</button>
+            <div id="searchResults"></div>
+        </section>
+        <section id="book-recommendations">
+            <h2>Recommend a Book</h2>
+            <form id="recommendationForm">
+                <input type="text" id="bookTitle" placeholder="Book Title">
+                <input type="text" id="authorName" placeholder="Author Name">
+                <button type="submit">Submit Recommendation</button>
+            </form>
+            <p id="recommendationConfirmation"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Community Library</p>
+    </footer>
+    <script src="library.js"></script>
+</body>
+</html>
